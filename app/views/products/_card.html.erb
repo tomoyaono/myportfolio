@@ -1,0 +1,27 @@
+<% products.each do |product| %>
+<div class="uk-padding-remove-right uk-margin-top">
+  <div class="uk-card yellow ">
+      
+     <% if current_user == product.user %>
+          <%= link_to 'Delete', product, method: :delete, data: { confirm: "You sure?" }, class: 'uk-button-danger' %>
+     <% end %>
+     
+     <%= link_to(product_path(product)) do %>
+     <div class="uk-card-media-top uk-flex uk-flex-center uk-transition-toggle" tabindex="0">
+         
+         <div id="icon-position">
+             
+            <img class="cd-resize uk-border-circle mobileHidden" src=<%= product.image.url if product.image? %> >
+            <img class="cd-resize-m uk-border-circle desktopHidden" src=<%= product.image.url if product.image? %> >
+            
+            
+                <span class="uk-transition-fade"><i class="fas fa-chevron-circle-right fa-lg"></i></span>
+         </div>
+     </div>
+     <div class="uk-text-center uk-margin-small-top">
+         <p class="name-tag"><%= product.title %></p>
+     </div>
+     <% end %>
+ </div>
+</div>
+<% end %>

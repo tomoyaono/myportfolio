@@ -1,0 +1,55 @@
+
+<div class="max-height" uk-grid>
+    <div class="uk-width-1-5@m logo-container yellow uk-visible@l">
+        <div class="margin">
+           <a class="my-logo text-color2" href="#">TomoyaOno</a> 
+        </div>
+        <ul class="uk-nav">
+            <li><a href="#" class="text-focus static-color1">About</a></li>
+            <li class="change-color2"><%= link_to "All Works", products_path, class: "text" %></li>
+            <li class="change-color3"><a href="mailto:oh_tomoya_gogo&#64;icloud.com" class="text">Contact</a></li>
+        </ul>
+    </div>
+    <div class="uk-width-4-5@m yellow uk-padding-remove-right uk-width-expand@m">
+        <div uk-grid>
+           <div class="uk-hidden@l uk-width-auto left">
+                
+              <a href="#offcanvas-usage" uk-toggle><i class="fas fa-bars fa-2x"></i></a>
+              <span class="my-logo logo-padding">TomoyaOno</span>
+                
+              <div id="offcanvas-usage" uk-offcanvas>
+                  <div class="uk-offcanvas-bar">
+                      <div class="right">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>  
+                      </div>
+                      
+                      <ul class="uk-nav list-container">
+                        <li><a href="#" class="text-focus">About</a></li>
+                        <li><%= link_to "All Works", products_path, class: "text-focus" %></li>
+                        <li><a href="mailto:oh_tomoya_gogo&#64;icloud.com" class="text-focus">Contact</a></li>
+                      </ul> 
+                  </div>
+              </div>
+           </div>
+           <div class="uk-width-expand right">
+               <a href="https://twitter.com/art_abroad_tom?ref_src=twsrc%5Etfw"><i class="fab fa-twitter fa-lg icon"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="https://www.instagram.com/tomoya.ono.tom/?ref=badge"><i class="fab fa-instagram fa-lg icon"></i></a>
+               <a href="https://www.facebook.com/oh.tomoya.gogo"><i class="fab fa-facebook fa-lg icon"></i></a>
+           </div> 
+        </div>
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-width-1-2 uk-margin-top uk-margin-bottom">
+               <div class="image-resize centering">
+                   <img src="/assets/selfie2.jpeg" class="image-round"/>
+               </div>
+               <div class="centering">
+                 <p class="header uk-margin-small-top">Tomoya Ono</p>
+                 <p class="comment">I’m a student of College for Creative Studies in Detroit. My speciality is product design and I have a great aspiration to create products which are not only stunning but also meticulous. I believe that possessing engineering and design skills is essential for future designers to solve complicated problems. My education, skills and languages are shown below.</p>
+                 <p class="school-name"><i class="fas fa-graduation-cap"></i> Nihon Unversity, Aerospace Engineering(BS)</p>
+                 <p class="school-name"><i class="far fa-thumbs-up"></i> HTML, CSS, Ruby, C++, PhotoShop</p>
+                 <p class="school-name"><i class="fas fa-language fa-lg"></i> Japanese, English</p>  
+               </div>
+            </div>
+        </div>
+    </div>
+</div>

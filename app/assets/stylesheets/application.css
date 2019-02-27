@@ -13,3 +13,261 @@
  *= require_tree .
  *= require_self
  */
+ 
+ html,
+ body
+  {
+     height: 100%;
+ }
+ 
+.header{
+     font-size: 1.2rem;
+     font-family: bebas neue,din-condensed, sans-serif;
+     font-style: normal;
+     font-weight: 200;
+     color: #292F33;
+     margin: 0;
+     padding: 0;
+     border-bottom: solid 1px black;
+ }
+ 
+.cd-header{
+    font-size: 1.5rem;
+    font-family: bebas neue,din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: #292F33;
+}
+ 
+.name-tag{
+     font-size: 1.0rem;
+     font-family: bebas neue,din-condensed, vdl-logojrblack, sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     color: #292F33;
+ }
+
+.comment{
+    font-size: 0.9rem;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+    color: #555;
+    border-bottom: solid 1px black;
+}
+
+.cd-comment{
+    font-size: 1.2rem;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: #555;
+    padding-top: 20px;
+    border-top: solid 1px black;
+}
+
+.school-name{
+    font-size: 1.0rem;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 8px;
+    color: #555;
+}
+
+.my-logo{
+    font-size: 1.5rem;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #292F33
+}
+
+.logo-padding{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #292F33;
+}
+
+a:hover{
+    color: #292F33;
+}
+
+.icon {
+  color: transparent;
+  text-stroke: 1px black;
+  -webkit-text-stroke: 1px black;
+  margin-left: 10px;
+}
+
+.icon-x{
+    font-size: 1.5rem;
+}
+
+.text{
+  color: transparent;
+  text-stroke: 1px black;
+  -webkit-text-stroke: 1px black;  
+}
+
+.text:hover{
+    margin-right: -3px;
+}
+
+.text-focus{
+  text-stroke: 1px black;
+  -webkit-text-stroke: 1px black;  
+}
+
+.text-color1{
+    color: #eee;
+}
+
+.text-color2:hover{
+    text-decoration: none;
+}
+
+li {
+    font-size: 1.2rem;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.static-color1 {
+   border-right: solid 3px red;
+}
+.static-color2 {
+   border-right: solid 3px blue; 
+}
+
+.change-color1:hover{
+    border-right: solid 3px red;
+}
+.change-color2:hover {
+   border-right: solid 3px blue;
+}
+
+.change-color3:hover {
+    border-right: solid 3px lime;
+}
+
+.margin{
+    margin-bottom: 50%;
+}
+
+div .yellow{
+    background-color: #FFD700;
+}
+
+div .black{
+    background-color: #111;
+}
+
+.logo-container{
+    padding: 20px 0px 20px 20px;
+    text-align: center;
+}
+
+.list-container{
+    text-align: center;
+}
+
+.right{
+    padding-top: 28px;
+    text-align: right;
+}
+
+.right-btn{
+    margin-left: auto;
+}
+
+.left{
+    padding: 20px 0px 0px 60px;
+}
+
+.max-height {
+    position: relative;
+    height: auto;
+    min-height:100%;
+}
+
+.centering{
+    text-align: center;
+}
+
+.content{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 30%;
+    height: 20%;
+}
+
+.box{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+
+.image-resize img{
+    width: 65%;
+    max-width: 65%;
+    height: auto;
+}
+.image-round {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: 20% 40%;  /* 横長画像の左上を基準に表示 */
+}
+
+.cd-resize {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cd-resize-m {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.red{
+    background: red;
+}
+
+.blue{
+    background: blue;
+}
+
+.mobileHidden {
+    display: none;
+}
+
+@media screen and (min-width:480px) { 
+    .desktopHidden { display:none;}
+    .mobileHidden { display:inline;}
+}
+
+#icon-position{
+    position: relative;
+    padding: 0;
+}
+
+#icon-position span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #292F33;
+}

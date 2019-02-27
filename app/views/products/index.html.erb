@@ -1,0 +1,44 @@
+<div class="max-height" uk-grid >
+    <div class="uk-width-1-5@m logo-container yellow uk-visible@l">
+        <div class="margin">
+           <%= link_to "TomoyaOno", root_path, class: "my-logo text-color2" %>
+        </div>
+        <ul class="uk-nav">
+            <li class="change-color1"><%= link_to "About", root_path, class: "text" %></li>
+            <li class="static-color2"><%= link_to "All Works", products_path, class: "text-focus" %></li>
+            <li class="change-color3"><a href="mailto:oh_tomoya_gogo&#64;icloud.com" class="text">Contact</a></li>
+        </ul>
+    </div>
+    <div class="uk-width-4-5@m yellow uk-padding-remove-right uk-width-expand@m">
+        <div uk-grid>
+           <div class="uk-hidden@l uk-width-auto left">
+                
+              <a href="#offcanvas-usage" uk-toggle><i class="fas fa-bars fa-2x"></i></a>
+              <span class="my-logo logo-padding">TomoyaOno</span>
+                
+              <div id="offcanvas-usage" uk-offcanvas>
+                  <div class="uk-offcanvas-bar">
+                      <div class="right">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>  
+                      </div>
+                      
+                      <ul class="uk-nav list-container">
+                        <li><%= link_to "About", root_path, class: "text" %></li>
+                        <li><%= link_to "All Works", products_path, class: "text-focus" %></li>
+                        <li><a href="mailto:oh_tomoya_gogo&#64;icloud.com" class="text">Contact</a></li>
+                      </ul> 
+                  </div>
+              </div>
+        
+           </div>
+           <div class="uk-width-expand right">
+               <a href="https://twitter.com/art_abroad_tom?ref_src=twsrc%5Etfw"><i class="fab fa-twitter fa-lg icon"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="https://www.instagram.com/tomoya.ono.tom/?ref=badge"><i class="fab fa-instagram fa-lg icon"></i></a>
+               <a href="https://www.facebook.com/oh.tomoya.gogo"><i class="fab fa-facebook fa-lg icon"></i></a>
+           </div> 
+        </div>
+        <div class="uk-child-width-1-4@l uk-child-width-1-4@m uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid >
+                <%= render 'products/card', products: @products %>
+        </div>
+    </div>
+</div>

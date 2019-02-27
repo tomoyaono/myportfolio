@@ -1,0 +1,41 @@
+<div class="uk-container-expand">
+  <div class="uk-flex uk-flex-center">
+    <div class="uk-width-1-3">
+      <%= form_for @product do |f| %>
+      <%= render 'layouts/error_messages', model: f.object %>
+        <form>
+          <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">Post</legend>
+
+        <div class="uk-margin">
+            <%= f.label :image, 'メインイメージ' %>
+            <%= f.file_field :image, class: 'uk-input' %>
+        </div>
+        
+        <%= f.label :subimages, 'サブイメージ' %>
+          <%= f.fields_for :subimages do |a| %>
+          <div class="uk-margin">
+            <%= a.file_field :sub_image, class: 'uk-input' %>
+          </div>
+        <% end %>
+        
+        <div class="uk-margin">
+            <%= f.label :title, '作品タイトル' %>
+            <%= f.text_area :title, class: 'uk-input' %>
+        </div>
+
+        <div class="uk-margin">
+              <%= f.label :content, 'コメント' %>
+              <%= f.text_area :content, class: 'uk-textarea' %>
+        </div>
+        <div class="uk-flex uk-flex-center">
+          <%= f.submit 'Post', class: 'uk-button uk-button-primary' %>
+        </div>
+        
+          </fieldset>
+        </form>
+      <% end %>
+    </div>
+  </div>
+</div>
