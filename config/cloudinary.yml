@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
-  api_key: <%= ENV["CLOUDINARY_API_KEY"] %>
-  api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
+  cloud_name: hp1aetgfb
+  api_key: '538639979593321'
+  api_secret: U5ak2p01JeyGRzPsgmoGHNBOwrM
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
-  api_key: <%= ENV["CLOUDINARY_API_KEY"] %>
-  api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
+  cloud_name: hp1aetgfb
+  api_key: '538639979593321'
+  api_secret: U5ak2p01JeyGRzPsgmoGHNBOwrM
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
-  api_key: <%= ENV["CLOUDINARY_API_KEY"] %>
-  api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
+  cloud_name: hp1aetgfb
+  api_key: '538639979593321'
+  api_secret: U5ak2p01JeyGRzPsgmoGHNBOwrM
   enhance_image_tag: true
   static_file_support: false
