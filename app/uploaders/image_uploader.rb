@@ -29,6 +29,10 @@ class ImageUploader < CarrierWave::Uploader::Base
   def extension_white_list
     %w(jpg jpeg gif png pdf)
   end
+  
+  def public_id
+    return model.id
+  end
 
  # 拡張子が同じでないとGIFをJPGとかにコンバートできないので、ファイル名を変更
   def filename
