@@ -11,8 +11,8 @@
          
          <div id="icon-position">
              
-            <img class="cd-resize uk-border-circle mobileHidden" src=<%= product.image.to_s if product.image? %> >
-            <img class="cd-resize-m uk-border-circle desktopHidden" src=<%= product.image.to_s if product.image? %> >
+            <img class="cd-resize uk-border-circle mobileHidden" src=<%= product.image_url if product.image? %> >
+            <img class="cd-resize-m uk-border-circle desktopHidden" src=<%= product.image_url if product.image? %> >
             
             
                 <span class="uk-transition-fade"><i class="fas fa-chevron-circle-right fa-lg"></i></span>

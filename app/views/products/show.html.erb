@@ -14,7 +14,7 @@
             <p class="cd-comment uk-margin-remove-top uk-margin-small-left uk-margin-small-right"><%= @product.content %></p>
             
             <div class="uk-card-media-bottom">
-              <%= image_tag(@product.image.to_s) if @product.image? %>
+              <%= image_tag(@product.image_url) if @product.image? %>
               <%= image_tag @product.subimages.first.sub_image.url if @product.subimages.first.present? %>
               <%= image_tag @product.subimages.second.sub_image.url if @product.subimages.second.present? %>
               <%= image_tag @product.subimages.third.sub_image.url if @product.subimages.third.present? %>  
