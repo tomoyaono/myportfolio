@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
 
   def new
     @product = current_user.products.build(product_params)
-    3.times {@product.subimages.build}
+    5.times {@product.subimages.build}
   end
 
   def create
