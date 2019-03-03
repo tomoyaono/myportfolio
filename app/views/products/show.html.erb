@@ -17,7 +17,9 @@
               <%= image_tag(@product.image_url) if @product.image? %>
               <%= image_tag @product.subimages.first.sub_image.url if @product.subimages.first.present? %>
               <%= image_tag @product.subimages.second.sub_image.url if @product.subimages.second.present? %>
-              <%= image_tag @product.subimages.third.sub_image.url if @product.subimages.third.present? %>  
+              <%= image_tag @product.subimages.third.sub_image.url if @product.subimages.third.present? %> 
+              <%= image_tag @product.subimages.fourth.sub_image.url if @product.subimages.fourth.present? %>
+              <%= image_tag @product.subimages.fifth.sub_image.url if @product.subimages.fifth.present? %>
             </div>
             <div class="uk-flex uk-flex-center uk-margin-large-top uk-margin-large-bottom">
               <a href="https://twitter.com/art_abroad_tom?ref_src=twsrc%5Etfw"><i class="fab fa-twitter fa-2x icon"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
