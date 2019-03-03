@@ -59,6 +59,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'cloudinary'
+gem 'meta-tags'
 
 group :production do
   gem 'pg', '0.21.0'
